@@ -5,3 +5,4 @@ lib/*
 service.jar
 service_server.ear
 classes/*
+tmp/*

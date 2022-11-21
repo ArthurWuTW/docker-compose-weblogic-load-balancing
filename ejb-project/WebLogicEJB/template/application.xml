@@ -2,6 +2,6 @@
 <application>
     <display-name>TEST</display-name>
     <module>
-        <ejb>server.jar</ejb>
+        <ejb>service.jar</ejb>
     </module>
 </application>

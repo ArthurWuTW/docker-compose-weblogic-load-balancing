@@ -2,3 +2,6 @@ WebLogicEJB.iml
 lib/*
 .gradle/*
 .idea/*
+service.jar
+service_server.ear
+classes/*

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="TestWebApp" default="buildTarget">
+
+    <path id="build.path">
+        <fileset dir="${basedir}/lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="buildTarget">
+        <mkdir dir="classes"/>
+        <javac srcdir="src" encoding="UTF-8" destdir="classes" compiler="modern" debug="on" deprecation="off" optimize="on">
+            <classpath>
+                <path refid="build.path"/>
+            </classpath>
+            <include name="**/*.java"/>
+        </javac>
+
+        <jar destfile="${basedir}/service.jar" compress="true" duplicate="preserve">
+            <fileset dir="${basedir}/classes" includes="com/pega/test/*/**"/>
+        </jar>
+
+        <ear destfile="${basedir}/service_server.ear" appxml="${basedir}/template/application.xml">
+            <zipfileset dir="${basedir}" includes="service.jar"/>
+        </ear>
+    </target>
+
+</project>

@@ -11,6 +11,12 @@ networks:
 
 services:
 
+  dev-env:
+    build:
+      context: image/dev-env
+    volumes:
+      - /Users/wuguanlong/Desktop:/home/user/Desktop
+
   weblogic-admin: 
     build: 
       context: image/weblogic-admin

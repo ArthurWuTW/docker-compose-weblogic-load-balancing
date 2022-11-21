@@ -1,6 +1,6 @@
 package com.pega.test;
 
-interface IService {
+public interface IService {
     interface IServiceLocal extends IService {
 
     }

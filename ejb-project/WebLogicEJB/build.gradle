@@ -15,4 +15,5 @@ task copyDependencies(type: Copy) {
 dependencies {
 
     implementation group: 'org.springframework', name: 'spring-web', version: '4.3.9.RELEASE'
+    implementation group: 'javax.ejb', name: 'ejb-api', version: '3.0'
 }

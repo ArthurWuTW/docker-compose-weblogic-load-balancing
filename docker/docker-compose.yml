@@ -16,6 +16,9 @@ services:
       context: image/dev-env
     volumes:
       - /Users/wuguanlong/Desktop:/home/user/Desktop
+    environment:
+      - PATH=/usr/local/gradle-5.0/bin:$PATH
+      - GRADLE_HOME=/usr/local/gradle-5.0
 
   weblogic-admin: 
     build: 

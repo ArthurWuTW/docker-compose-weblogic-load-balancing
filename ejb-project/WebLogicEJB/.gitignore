@@ -6,3 +6,5 @@ service.jar
 service_server.ear
 classes/*
 tmp/*
+out/*
+.idea/misc.xml

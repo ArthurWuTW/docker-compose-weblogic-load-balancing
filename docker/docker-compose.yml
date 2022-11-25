@@ -17,8 +17,9 @@ services:
     volumes:
       - /Users/wuguanlong/Desktop:/home/user/Desktop
     environment:
-      - PATH=/usr/local/gradle-5.0/bin:$PATH
+      - PATH=/usr/local/gradle-5.0/bin:/usr/local/zulu8.66.0.15-ca-jdk8.0.352-linux_x64/bin:$PATH
       - GRADLE_HOME=/usr/local/gradle-5.0
+      - JAVA_HOME=/usr/local/zulu8.66.0.15-ca-jdk8.0.352-linux_x64
 
   weblogic-admin: 
     build: 

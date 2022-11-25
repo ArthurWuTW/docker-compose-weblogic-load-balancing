@@ -1,9 +1,9 @@
 package com.pega.test;
 
-public interface IService {
-    interface IServiceLocal extends IService {
+import javax.ejb.Remote;
 
-    }
+@Remote
+public interface IService {
 
     public String sayHello() throws Exception;
 }

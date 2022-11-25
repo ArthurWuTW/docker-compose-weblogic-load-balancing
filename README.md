@@ -43,6 +43,10 @@ url: http://127.0.0.1:7001/console
 username: weblogic
 password: welcome1
 ![image](https://user-images.githubusercontent.com/36653598/203979125-46a1983f-48c6-4ce2-a159-86a3b5555916.png)
+Install EAR file
 ![image](https://user-images.githubusercontent.com/36653598/203979593-08812c8e-0bd4-4111-8606-8b13cc8c5279.png)
+Run EJB Service
+![image](https://user-images.githubusercontent.com/36653598/203980788-0f3c3851-8d0b-4214-b865-5aa73c171450.png)
+![image](https://user-images.githubusercontent.com/36653598/203980902-abf7e899-7eaf-4dfe-8573-e064d86332c3.png)
 
 

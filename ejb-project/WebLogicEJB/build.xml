@@ -8,20 +8,20 @@
     </path>
 
     <target name="buildTarget">
-        <mkdir dir="classes"/>
-        <javac srcdir="src" encoding="UTF-8" destdir="classes" compiler="modern" debug="on" deprecation="off" optimize="on">
+        <mkdir dir="${basedir}/build/classes"/>
+        <javac srcdir="src" encoding="UTF-8" destdir="${basedir}/build/classes" compiler="modern" debug="on" deprecation="off" optimize="on">
             <classpath>
                 <path refid="build.path"/>
             </classpath>
             <include name="**/*.java"/>
         </javac>
 
-        <jar destfile="${basedir}/service.jar" compress="true" duplicate="preserve">
-            <fileset dir="${basedir}/classes" includes="com/pega/test/*/**"/>
+        <jar destfile="${basedir}/build/service.jar" compress="true" duplicate="preserve">
+            <fileset dir="${basedir}/build/classes" includes="com/pega/test/*/**"/>
         </jar>
 
-        <ear destfile="${basedir}/service_server.ear" appxml="${basedir}/template/application.xml">
-            <zipfileset dir="${basedir}" includes="service.jar"/>
+        <ear destfile="${basedir}/build/service_server.ear" appxml="${basedir}/template/application.xml">
+            <zipfileset dir="${basedir}/build" includes="service.jar"/>
         </ear>
     </target>
 

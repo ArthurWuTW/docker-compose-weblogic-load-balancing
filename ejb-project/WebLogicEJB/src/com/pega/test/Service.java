@@ -7,6 +7,7 @@ import javax.ejb.Stateless;
 public class Service implements IService{
     @Override
     public String sayHello() throws Exception {
+        System.out.println("Service.sayHello");
         return "Hello World";
     }
 }

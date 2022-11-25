@@ -11,7 +11,7 @@ networks:
 
 services:
 
-  dev-env:
+  build-env:
     build:
       context: image/dev-env
     volumes:

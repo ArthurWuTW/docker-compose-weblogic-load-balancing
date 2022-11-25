@@ -49,4 +49,20 @@ Run EJB Service
 ![image](https://user-images.githubusercontent.com/36653598/203980788-0f3c3851-8d0b-4214-b865-5aa73c171450.png)
 ![image](https://user-images.githubusercontent.com/36653598/203980902-abf7e899-7eaf-4dfe-8573-e064d86332c3.png)
 
+## Client Test
+Environment: Host (MacOS)
+IDE: intellJ
+JDK: zulu8.66.0.15-ca-jdk8.0.352-macosx_x64
+### Dependencies:
+- lib/*.jar: create by gradle
+- wlthint3client.jar: copy from inside WebLogic Container 
+```sh
+[weblogic-admin] cd /u01/oracle/weblogic/wlserver/server/lib
+[weblogic-admin] ll | grep wlthint3client.jar
+```
+
+Run ClientTest.java in IDE
+
+
+
 

@@ -54,8 +54,8 @@ Environment: Host (MacOS)
 IDE: intellJ
 JDK: zulu8.66.0.15-ca-jdk8.0.352-macosx_x64
 ### Dependencies:
-- lib/*.jar: create by gradle
-- wlthint3client.jar: copy from inside WebLogic Container 
+- lib/*.jar: created by gradle
+- wlthint3client.jar: copied from inside WebLogic Container 
 ```sh
 [weblogic-admin] cd /u01/oracle/weblogic/wlserver/server/lib
 [weblogic-admin] ll | grep wlthint3client.jar

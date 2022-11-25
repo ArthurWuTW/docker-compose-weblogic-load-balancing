@@ -1,5 +1,19 @@
-# WebLogic Console URL
-127.0.0.1:7001/console
+# WebLogic EJB Application Project
 
-# WebLogic Account/Password
-weblogic welcome1
+## Environment
+
+- Docker Containers
+- Host
+
+### Docker containers
+
+- WebLogic Server Container
+- EJB EAR File Build Container
+
+### Host
+
+run Client test
+
+## Get started!
+
+1. Build EAR file

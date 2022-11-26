@@ -9,7 +9,7 @@ public class ClientTest {
         System.out.println("123");
         Properties properties = new Properties();
         properties.put(Context.INITIAL_CONTEXT_FACTORY, "weblogic.jndi.WLInitialContextFactory");
-        properties.put(Context.PROVIDER_URL, "t3://localhost:7001");
+        properties.put(Context.PROVIDER_URL, "t3://localhost:7878");
 
         try {
             InitialContext ctx = new InitialContext(properties);

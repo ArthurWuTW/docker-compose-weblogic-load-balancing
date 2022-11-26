@@ -20,6 +20,9 @@ services:
       - PATH=/usr/local/gradle-5.0/bin:/usr/local/zulu8.66.0.15-ca-jdk8.0.352-linux_x64/bin:$PATH
       - GRADLE_HOME=/usr/local/gradle-5.0
       - JAVA_HOME=/usr/local/zulu8.66.0.15-ca-jdk8.0.352-linux_x64
+    networks:
+      vpcbr:
+        ipv4_address: 172.28.1.3
 
   weblogic-admin: 
     build: 
@@ -32,5 +35,19 @@ services:
         ipv4_address: 172.28.1.5
     ports:
       - "7001:7001"
+      - "7878:7878" # EJB Port
+  
+  weblogic-slave1: 
+    build: 
+      context: image/weblogic-admin
+    hostname: weblogic.slave1.com
+    volumes:
+      - /Users/wuguanlong/Desktop:/home/user/Desktop
+    networks:
+      vpcbr:
+        ipv4_address: 172.28.1.6
+    ports:
+      - "7001:7001"
+      - "7878:7878" # EJB Port
 
   

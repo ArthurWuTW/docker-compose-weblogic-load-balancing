@@ -68,7 +68,8 @@ Run ClientTest.java in IDE
 - Setup Machine
 ![image](https://user-images.githubusercontent.com/36653598/204074461-e2e5fbb2-1400-4c0f-9129-c741f91a0a32.png)
 - Setup Server
-![image](https://user-images.githubusercontent.com/36653598/204074496-257a7823-9826-4a5c-9ca2-e4405f36b082.png)
+*** Note that listen address cannot be localhost
+![image](https://user-images.githubusercontent.com/36653598/204075471-ef3c7c0b-e3c5-4141-b322-e84ba07fe887.png)
 - start NodeManager and start Server
 
 Modify nodemanager.properties

@@ -1,0 +1,1 @@
+/usr/java/jdk1.8.0_25/bin/java -cp /u01/oracle/weblogic/wlserver/server/lib/weblogic.jar weblogic.WLST /home/user/script/weblogicCreateServerClusterScript.py 

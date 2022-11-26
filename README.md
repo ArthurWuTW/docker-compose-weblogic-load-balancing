@@ -64,6 +64,20 @@ JDK: zulu8.66.0.15-ca-jdk8.0.352-macosx_x64
 Run ClientTest.java in IDE
 ![image](https://user-images.githubusercontent.com/36653598/203983696-1be9daba-d812-41b2-8898-205a2c2ad520.png)
 
+## Setup Managed Server
+- Setup Machine
+![image](https://user-images.githubusercontent.com/36653598/204074461-e2e5fbb2-1400-4c0f-9129-c741f91a0a32.png)
+- Setup Server
+![image](https://user-images.githubusercontent.com/36653598/204074496-257a7823-9826-4a5c-9ca2-e4405f36b082.png)
+- start NodeManager and start Server
 
+Modify nodemanager.properties
+![image](https://user-images.githubusercontent.com/36653598/204074557-f985220c-932b-46f8-95f7-cfda16e32ddc.png)
+start NodeManager
+```sh
+[weblogic-admin] cd /u01/oracle/weblogic/user_projects/domains/base_domain/bin
+[weblogic-admin] ./startNodeManager.sh
+```
+![image](https://user-images.githubusercontent.com/36653598/204074597-88bc6193-9a03-4736-817b-a6a267f1f3ff.png)
 
 

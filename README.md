@@ -64,7 +64,7 @@ JDK: zulu8.66.0.15-ca-jdk8.0.352-macosx_x64
 Run ClientTest.java in IDE
 ![image](https://user-images.githubusercontent.com/36653598/203983696-1be9daba-d812-41b2-8898-205a2c2ad520.png)
 
-## Setup Managed Server
+## [Deprecated]Setup Managed Server
 - Setup Machine
 ![image](https://user-images.githubusercontent.com/36653598/204074461-e2e5fbb2-1400-4c0f-9129-c741f91a0a32.png)
 - Setup Server

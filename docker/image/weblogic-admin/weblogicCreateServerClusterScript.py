@@ -5,7 +5,7 @@ import javax.management.Attribute
 print 'starting the script .... '
 connect('weblogic','welcome1','t3://localhost:7001')
 clusters = "cluster1","cluster2"
-ms1 = {'Server-0':[7772, "172.28.1.5"],'Server-1':[7772,"172.28.1.6"]}
+ms1 = {'Server-0':[7878, "172.28.1.5"],'Server-1':[7878,"172.28.1.6"]}
 clustHM = HashMap()
 edit()
 startEdit()

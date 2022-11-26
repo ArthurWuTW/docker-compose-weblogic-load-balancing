@@ -1,0 +1,1 @@
+/usr/java/jdk1.8.0_25/bin/java -cp /u01/oracle/weblogic/wlserver/server/lib/weblogic.jar weblogic.Deployer -redeploy -remote -debug -adminurl t3://172.28.1.5:7001 -user weblogic -password welcome1 -source /home/user/Desktop/docker-compose-weblogic-load-balancing/ejb-project/WebLogicEJB/build/service_server.ear -name service_server -targets cluster1

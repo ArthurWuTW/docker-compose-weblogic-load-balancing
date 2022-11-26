@@ -26,8 +26,12 @@ services:
 
   weblogic-admin: 
     build: 
+      args:
+        SERVER_NAME: Server-0
       context: image/weblogic-admin
     hostname: weblogic.admin.com
+    environment:
+      - SERVICE_NAME=Server-0
     volumes:
       - /Users/wuguanlong/Desktop:/home/user/Desktop
     networks:
@@ -39,8 +43,12 @@ services:
   
   weblogic-slave1: 
     build: 
+      args: 
+        SERVER_NAME: Server-1
       context: image/weblogic-admin
     hostname: weblogic.slave1.com
+    environment:
+      - SERVICE_NAME=Server-1
     volumes:
       - /Users/wuguanlong/Desktop:/home/user/Desktop
     networks:

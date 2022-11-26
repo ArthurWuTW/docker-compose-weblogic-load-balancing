@@ -1,0 +1,1 @@
+/u01/oracle/weblogic/user_projects/domains/base_domain/bin/startManagedWebLogic.sh $SERVICE_NAME > /dev/null 2>&1 &

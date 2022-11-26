@@ -47,7 +47,6 @@ services:
       vpcbr:
         ipv4_address: 172.28.1.6
     ports:
-      - "7001:7001"
-      - "7878:7878" # EJB Port
+      - "7879:7878" # EJB Port
 
   

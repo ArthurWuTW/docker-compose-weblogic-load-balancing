@@ -80,4 +80,6 @@ start NodeManager
 ```
 ![image](https://user-images.githubusercontent.com/36653598/204074597-88bc6193-9a03-4736-817b-a6a267f1f3ff.png)
 
+Start Server and make sure Server-0 is in state RUNNING
+![image](https://user-images.githubusercontent.com/36653598/204074743-9c4e7d93-62aa-48a0-824f-576fc4f0ae69.png)
 

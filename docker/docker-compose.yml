@@ -25,6 +25,7 @@ services:
         ipv4_address: 172.28.1.3
 
   weblogic-admin: 
+    container_name: weblogic-admin
     build: 
       args:
         SERVER_NAME: Server-0
@@ -42,6 +43,7 @@ services:
       - "7878:7878" # EJB Port - Proxied Port should be the same as Server port
   
   weblogic-slave1: 
+    container_name: weblogic-slave1
     build: 
       args: 
         SERVER_NAME: Server-1

@@ -11,7 +11,7 @@ usage()
 	echo "them in command line:"
 	echo "Usage: $1 SERVER_NAME {ADMIN_URL}"
 	echo "for example:"
-	echo "$1 managedserver1 http://e3c429cb811b:7001"
+	echo "$1 managedserver1 http://172.28.1.5:7001"
 }
 
 # --- End Functions ---

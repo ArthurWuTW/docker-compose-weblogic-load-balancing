@@ -39,7 +39,7 @@ services:
         ipv4_address: 172.28.1.5
     ports:
       - "7001:7001"
-      - "7878:7878" # EJB Port
+      - "7878:7878" # EJB Port - Proxied Port should be the same as Server port
   
   weblogic-slave1: 
     build: 
@@ -55,6 +55,7 @@ services:
       vpcbr:
         ipv4_address: 172.28.1.6
     ports:
-      - "7879:7878" # EJB Port
+      - "7772:7772" # EJB Port- Proxied Port should be the same as Server port
+    command: /usr/sbin/init
 
   

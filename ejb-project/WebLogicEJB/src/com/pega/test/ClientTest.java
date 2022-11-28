@@ -10,12 +10,21 @@ public class ClientTest {
         Properties properties = new Properties();
         properties.put("java.naming.factory.initial", "weblogic.jndi.WLInitialContextFactory");
         properties.put("java.naming.provider.url", "t3://0.0.0.0:7772,0.0.0.0:7878");
+//        properties.put("java.naming.provider.url", "t3://0.0.0.0:7772");
+//        properties.put("java.naming.provider.url", "t3://0.0.0.0:7878");
+
 
         try {
-            for(int i=0;i<10;++i){
-                InitialContext ctx = new InitialContext(properties);
+            InitialContext ctx = null;
+            for(Integer i=0;i<10;++i){
+                ctx = new InitialContext(properties);
                 IService a = (IService)ctx.lookup("Service#com.pega.test.IService");
-                System.out.println(a.sayHello());
+                System.out.println(i.toString()+" "+a.sayHello());
+                IService b = (IService)ctx.lookup("Service#com.pega.test.IService");
+                System.out.println(i.toString()+" "+b.sayHello());
+                IService c = (IService)ctx.lookup("Service#com.pega.test.IService");
+                System.out.println(i.toString()+" "+c.sayHello());
+                System.out.println("------------------------------");
             }
         } catch (Exception e) {
             e.printStackTrace();

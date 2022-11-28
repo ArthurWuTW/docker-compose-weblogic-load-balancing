@@ -8,6 +8,6 @@ public class Service implements IService{
     @Override
     public String sayHello() throws Exception {
         System.out.println("Service.sayHello");
-        return "Hello World";
+        return "Hello World "+System.getProperty("region");
     }
 }

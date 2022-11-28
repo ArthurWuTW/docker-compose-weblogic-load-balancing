@@ -12,9 +12,11 @@ public class ClientTest {
         properties.put("java.naming.provider.url", "t3://0.0.0.0:7772,0.0.0.0:7878");
 
         try {
-            InitialContext ctx = new InitialContext(properties);
-            IService a = (IService)ctx.lookup("Service#com.pega.test.IService");
-            System.out.println(a.sayHello());
+            for(int i=0;i<10;++i){
+                InitialContext ctx = new InitialContext(properties);
+                IService a = (IService)ctx.lookup("Service#com.pega.test.IService");
+                System.out.println(a.sayHello());
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

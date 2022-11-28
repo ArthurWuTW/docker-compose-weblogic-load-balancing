@@ -51,7 +51,7 @@ export WLS_PW
 
 #  set JAVA_OPTIONS=-Dweblogic.attribute=value -Djava.attribute=value
 
-JAVA_OPTIONS="-Dweblogic.security.SSL.trustedCAKeyStore="/u01/oracle/weblogic/wlserver/server/lib/cacerts" ${JAVA_OPTIONS}"
+JAVA_OPTIONS="-Dregion=${SERVICE_NAME} -Dweblogic.security.SSL.trustedCAKeyStore="/u01/oracle/weblogic/wlserver/server/lib/cacerts" ${JAVA_OPTIONS}"
 export JAVA_OPTIONS
 
 #  Set JAVA_VM to the java virtual machine you want to run.  For instance:

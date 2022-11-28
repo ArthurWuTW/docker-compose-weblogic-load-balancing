@@ -16,4 +16,6 @@ RUN wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /usr/lo
     unzip gradle-5.0-bin.zip && \
     rm gradle-5.0-bin.zip
 
+COPY cleanAndBuildEJB.sh /home/user/script/cleanAndBuildEJB.sh
+
 CMD ["/sbin/init"]

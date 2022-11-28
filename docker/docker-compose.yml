@@ -12,6 +12,7 @@ networks:
 services:
 
   build-env:
+    container_name: build-env
     build:
       context: image/dev-env
     volumes:
@@ -20,6 +21,7 @@ services:
       - PATH=/usr/local/gradle-5.0/bin:/usr/local/zulu8.66.0.15-ca-jdk8.0.352-linux_x64/bin:$PATH
       - GRADLE_HOME=/usr/local/gradle-5.0
       - JAVA_HOME=/usr/local/zulu8.66.0.15-ca-jdk8.0.352-linux_x64
+      - REPO_PATH=/home/user/Desktop
     networks:
       vpcbr:
         ipv4_address: 172.28.1.3
